@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  position:fixed;
+  top:-50px;
+  bottom:0;
+  z: 0;
+  width:13%;
+  min-width: 150px;
+  background-color: #939393;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li:hover {
+  background-color: #545454;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  padding-top: 80px;
+  padding-right: 0;
+}
+
+
+
+nav ul li a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.li1 {
+  background: url('../img/dashboard.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.li2 {
+  background: url('../img/door.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.li3 {
+  background: url('../img/window.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.li4 {
+  background: url('../img/light.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.li5 {
+  background: url('../img/temp.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.li6 {
+  background: url('../img/setting.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+}
+
+.content {
+  overflow: auto;
+  margin-left: 13%;
+  padding-left: 100px;
+  padding-top: 50px;
+  height: 100%;
+  background-color: lightblue;
+}
+
+h1 {
+  text-align: center;
+}
