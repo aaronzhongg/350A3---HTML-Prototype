@@ -12,7 +12,7 @@ nav {
   position:fixed;
   top:-50px;
   bottom:0;
-  z: 0;
+  z-index: 1;
   width:13%;
   min-width: 150px;
   background-color: #939393;
@@ -47,6 +47,16 @@ nav ul li a:visited{
 nav ul li a:hover{
   color: black;
   text-decoration: none;
+}
+
+.title {
+  position: fixed;
+  top:0;
+  left:5%;
+  z-index: 0;
+  width: 100%;
+  min-width: 1024px;
+  background-color: black;
 }
 
 .li1 {
@@ -98,6 +108,7 @@ nav ul li a:hover{
   padding-top: 50px;
   height: 100%;
   background-color: lightblue;
+  min-width: 1024px;
 }
 
 h1 {
