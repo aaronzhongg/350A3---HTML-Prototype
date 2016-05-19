@@ -121,6 +121,7 @@ nav ul li a:hover{
   padding-left: 185px;
   margin-right: auto;
   margin-left: 3%;
+  padding-bottom: 10px;
 
 }
 
@@ -129,8 +130,10 @@ h1 {
 }
 
 .dashboardpanel {
+  /*box-shadow: 5px 5px 5px #888888;*/
   background-color: white;
   outline: black solid thin;
+  border-bottom: thin solid black;
   width: 50%
 }
 
@@ -160,5 +163,5 @@ thead {
 th, td {
   padding: 10px;
   text-align: center;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #d3d3d3;
 }
