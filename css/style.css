@@ -4,6 +4,12 @@
   padding 0;
 }
 
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
 nav {
   position:fixed;
   top:-50px;
@@ -30,7 +36,7 @@ nav ul li a {
   display: block;
   text-align: center;
   color: white;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-right: 0;
   padding-bottom: 20px;
 }
@@ -58,57 +64,80 @@ nav ul li a:hover{
 
 .li1 {
   background: url('../img/dashboard1.png');
-  background-position: 50% 35%;
+  background-position: 50% 30%;
   background-repeat: no-repeat;
-  background-size: 40px 40px;
+  background-size: 35px 35px;
 }
 
 .li2 {
   background: url('../img/door1.png');
-  background-position: 50% 35%;
+  background-position: 50% 30%;
   background-repeat: no-repeat;
-  background-size: 40px 40px;
+  background-size: 35px 35px;
 }
 
 .li3 {
   background: url('../img/window1.png');
-  background-position: 50% 35%;
+  background-position: 50% 30%;
   background-repeat: no-repeat;
-  background-size: 40px 40px;
+  background-size: 35px 35px;
 }
 
 .li4 {
   background: url('../img/light1.png');
-  background-position: 50% 35%;
+  background-position: 50% 30%;
   background-repeat: no-repeat;
-  background-size: 40px 40px;
+  background-size: 35px 35px;
 }
 
 .li5 {
   background: url('../img/temp1.png');
-  background-position: 50% 35%;
+  background-position: 50% 30%;
   background-repeat: no-repeat;
-  background-size: 40px 40px;
+  background-size: 25px 35px;
 }
 
 .li6 {
-  background: url('../img/setting1.png');
-  background-position: 50% 35%;
+  background: url('../img/camera1.png');
+  background-position: 50% 30%;
   background-repeat: no-repeat;
-  background-size: 40px 40px;
+  background-size: 35px 35px;
+}
+
+.li7 {
+  background: url('../img/setting1.png');
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
 }
 
 .content {
   overflow: auto;
   /*padding-top: 50px;*/
-  height: 100%;
-  min-width: 1024px;
-  padding-right: 15px;
-  padding-left: 150px;
+
+  min-width: 850px;
+  padding-right: 50px;
+  padding-left: 185px;
   margin-right: auto;
   margin-left: 3%;
+  background-color: #fafafa;
 }
 
 h1 {
   text-align: center;
+}
+
+.dashboardpanel {
+  background-color: white;
+  outline: black solid thin;
+  width: 50%
+}
+
+.dashboardpanel * {
+  padding: 10px;
+}
+
+#dashboardimg {
+  height: 100px;
+  width: 100px;
 }
