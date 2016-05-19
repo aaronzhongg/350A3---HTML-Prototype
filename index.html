@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>IJIF</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/bootstrap.min.js"> </script>
   <script src="js/jquery-1.12.3.js"> </script>
 </head>
@@ -26,18 +26,18 @@
 <div class="content">
 <h1> Dashboard </h1>
 <hr>
-<p style="font-style:italic">The Dashboard gives you a quick overview of your home </p>
+<p style="font-style:italic">The Dashboard gives you a quick overview of the status of your home </p>
 <br>
 <div id="container">
 <div class="dashboardpanel" style="float:left">
 <h2>  <img id="dashboardimg" src="img/door.png" /> Doors </h2>
-<p> Doors opened: </p>
-<p> Doors closed: </p>
+<p class="ijiflabel"> Doors opened: </p>
+<p class="ijiflabel"> Doors closed: </p>
 </div>
 <div class="dashboardpanel" style="float:right">
 <h2>  <img id="dashboardimg" src="img/window.png" /> Windows </h2>
-<p> Windows opened: </p>
-<p> Windows closed: </p>
+<p class="ijiflabel"> Windows opened: </p>
+<p class="ijiflabel" > Windows closed: </p>
 </div>
 </div>
 <br>
@@ -45,11 +45,11 @@
 <div id="container">
 <div class="dashboardpanel" style="float:left">
 <h2>  <img id="dashboardimg" src="img/light.png" /> Lights </h2>
-<p> Lights on: </p>
+<p class="ijiflabel"> Lights on: </p>
 </div>
 <div class="dashboardpanel" style="float:right">
 <h2>  <img id="dashboardimg" src="img/temp.png" style="width:75px;"/> Temperature </h2>
-<p> House temperature: </p>
+<p class="ijiflabel"> House temperature: </p>
 </div>
 </div>
 <br>
@@ -57,15 +57,13 @@
 <div id="container">
 <div class="dashboardpanel" style="float:left">
 <h2>  <img id="dashboardimg" src="img/camera.png" /> Surveillance </h2>
-<p> Active cameras: </p>
+<p class="ijiflabel"> Active cameras: </p>
 </div>
 </div>
 
 <br>
 
 </div>
-
-<hr>
 
 </body>
 </html>

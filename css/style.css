@@ -9,6 +9,7 @@ html {
 }
 body {
   min-height: 100%;
+  background-color: #fafafa;
 }
 nav {
   position:fixed;
@@ -120,7 +121,7 @@ nav ul li a:hover{
   padding-left: 185px;
   margin-right: auto;
   margin-left: 3%;
-  background-color: #fafafa;
+
 }
 
 h1 {
@@ -140,4 +141,8 @@ h1 {
 #dashboardimg {
   height: 100px;
   width: 100px;
+}
+
+.ijiflabel {
+  font-size: 12pt;
 }
