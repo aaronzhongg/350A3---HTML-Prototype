@@ -1,11 +1,7 @@
 * {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   padding 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
 }
 
 nav {
@@ -15,7 +11,7 @@ nav {
   z-index: 1;
   width:13%;
   min-width: 150px;
-  background-color: #939393;
+  background-color: #FFA500;
   overflow-y:auto;
 }
 
@@ -26,7 +22,7 @@ nav ul {
 }
 
 nav ul li:hover {
-  background-color: #545454;
+  background-color: #F58025;
 }
 
 nav ul li a {
@@ -36,9 +32,8 @@ nav ul li a {
   color: black;
   padding-top: 80px;
   padding-right: 0;
+  padding-bottom: 20px;
 }
-
-
 
 nav ul li a:visited{
   color: black;
@@ -60,46 +55,55 @@ nav ul li a:hover{
   background-color: black;
 }
 
+.li0 {
+  font-size: 14pt;
+}
+
+.li0:hover {
+  background-color: #FFA500; !important
+  text-decoration: none;
+}
+
 .li1 {
   background: url('../img/dashboard.png');
-  background-position: center;
+  background-position: 50% 35%;
   background-repeat: no-repeat;
-  background-size: 25px 25px;
+  background-size: 40px 40px;
 }
 
 .li2 {
   background: url('../img/door.png');
-  background-position: center;
+  background-position: 50% 35%;
   background-repeat: no-repeat;
-  background-size: 25px 25px;
+  background-size: 40px 40px;
 }
 
 .li3 {
   background: url('../img/window.png');
-  background-position: center;
+  background-position: 50% 35%;
   background-repeat: no-repeat;
-  background-size: 25px 25px;
+  background-size: 40px 40px;
 }
 
 .li4 {
   background: url('../img/light.png');
-  background-position: center;
+  background-position: 50% 35%;
   background-repeat: no-repeat;
-  background-size: 25px 25px;
+  background-size: 40px 40px;
 }
 
 .li5 {
   background: url('../img/temp.png');
-  background-position: center;
+  background-position: 50% 35%;
   background-repeat: no-repeat;
-  background-size: 25px 25px;
+  background-size: 40px 40px;
 }
 
 .li6 {
   background: url('../img/setting.png');
-  background-position: center;
+  background-position: 50% 35%;
   background-repeat: no-repeat;
-  background-size: 25px 25px;
+  background-size: 40px 40px;
 }
 
 .content {
