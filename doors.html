@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/bootstrap.min.js"> </script>
   <script src="js/jquery-1.12.3.js"> </script>
+  <link  rel="stylesheet" href="css/bootstrap-toggle.min.css">
+  <script src="js/bootstrap-toggle.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +27,42 @@
   <div class="content">
     <h1>Doors</h1>
     <hr>
-
+    <p> <i> View and change the states of your doors here. Opened doors are automatically unlocked </i></p>
+    <br>
+    <table class="doortable">
+      <thead>
+        <tr>
+          <td>Door Picture</td>
+          <td>Door Description</td>
+          <td>Door Close</td>
+          <td>Door Lock</td>
+        </tr>
+      </thead>
+      <tr>
+        <td><img src="img/frontdoor.jpg" height="120px;"></td>
+        <td>Front Door</td>
+        <td><input type="checkbox" data-toggle="toggle" data-on="Closed" data-off="Opened"></td>
+        <td><input type="checkbox" data-toggle="toggle" data-on="Locked" data-off="Unlocked"></td>
+      </tr>
+      <tr>
+        <td><img src="img/garage.jpg" height="120px;"></td>
+        <td>Garage</td>
+        <td><input type="checkbox" data-toggle="toggle" data-on="Closed" data-off="Opened"></td>
+        <td><input type="checkbox" data-toggle="toggle" data-on="Locked" data-off="Unlocked"></td>
+      </tr>
+      <tr>
+        <td><img src="img/master.jpg" height="120px;"></td>
+        <td>Master Bedroom</td>
+        <td><input type="checkbox" data-toggle="toggle" data-on="Closed" data-off="Opened"></td>
+        <td><input type="checkbox" data-toggle="toggle" data-on="Locked" data-off="Unlocked"></td>
+      </tr>
+      <tr>
+        <td><img src="img/back.jpg" height="120px;"></td>
+        <td>Back Door</td>
+        <td><input type="checkbox" data-toggle="toggle" data-on="Closed" data-off="Opened"></td>
+        <td><input type="checkbox" data-toggle="toggle" data-on="Locked" data-off="Unlocked"></td>
+      </tr>
+    </table>
   </div>
 
 

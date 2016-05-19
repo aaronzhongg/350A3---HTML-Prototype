@@ -11,6 +11,7 @@ body {
   min-height: 100%;
   background-color: #fafafa;
 }
+
 nav {
   position:fixed;
   top:-50px;
@@ -115,7 +116,6 @@ nav ul li a:hover{
 .content {
   overflow: auto;
   /*padding-top: 50px;*/
-
   min-width: 850px;
   padding-right: 50px;
   padding-left: 185px;
@@ -145,4 +145,20 @@ h1 {
 
 .ijiflabel {
   font-size: 12pt;
+}
+
+.doortable {
+  width: 100%;
+  font-size: 12pt;
+}
+
+thead {
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid;
 }
