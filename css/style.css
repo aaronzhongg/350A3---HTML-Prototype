@@ -11,7 +11,8 @@ nav {
   z-index: 1;
   width:13%;
   min-width: 150px;
-  background-color: #FFA500;
+  max-width: 185px;
+  background-color: #5F021F;
   overflow-y:auto;
 }
 
@@ -22,85 +23,76 @@ nav ul {
 }
 
 nav ul li:hover {
-  background-color: #F58025;
+  background-color: #990033;
 }
 
 nav ul li a {
   display: block;
   text-align: center;
-  font-weight: bold;
-  color: black;
+  color: white;
   padding-top: 80px;
   padding-right: 0;
   padding-bottom: 20px;
 }
 
 nav ul li a:visited{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 nav ul li a:hover{
-  color: black;
+  color: white;
   text-decoration: none;
-}
-
-.title {
-  position: fixed;
-  top:0;
-  left:5%;
-  z-index: 0;
-  width: 100%;
-  min-width: 1024px;
-  background-color: black;
 }
 
 .li0 {
   font-size: 14pt;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .li0:hover {
-  background-color: #FFA500; !important
+  background-color: #5F021F; !important
   text-decoration: none;
 }
 
 .li1 {
-  background: url('../img/dashboard.png');
+  background: url('../img/dashboard1.png');
   background-position: 50% 35%;
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
 
 .li2 {
-  background: url('../img/door.png');
+  background: url('../img/door1.png');
   background-position: 50% 35%;
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
 
 .li3 {
-  background: url('../img/window.png');
+  background: url('../img/window1.png');
   background-position: 50% 35%;
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
 
 .li4 {
-  background: url('../img/light.png');
+  background: url('../img/light1.png');
   background-position: 50% 35%;
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
 
 .li5 {
-  background: url('../img/temp.png');
+  background: url('../img/temp1.png');
   background-position: 50% 35%;
   background-repeat: no-repeat;
   background-size: 40px 40px;
 }
 
 .li6 {
-  background: url('../img/setting.png');
+  background: url('../img/setting1.png');
   background-position: 50% 35%;
   background-repeat: no-repeat;
   background-size: 40px 40px;
@@ -108,12 +100,13 @@ nav ul li a:hover{
 
 .content {
   overflow: auto;
-  margin-left: 13%;
-  padding-left: 100px;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   height: 100%;
-  background-color: lightblue;
   min-width: 1024px;
+  padding-right: 15px;
+  padding-left: 150px;
+  margin-right: auto;
+  margin-left: 3%;
 }
 
 h1 {
