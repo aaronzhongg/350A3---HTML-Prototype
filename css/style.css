@@ -135,22 +135,46 @@ h1 {
   border-radius: 5px;
   border: 1px solid lightgrey;
   width: 50%
-
 }
 
 .dashboardpanel * {
+  text-align: center;
+  line-height: 30px;
   padding: 10px;
 }
 
 #dashboardimg {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
+}
+
+#doorsclosed {
+  font-size: 14pt;
+}
+#doorsclosed * {
+  font-size: 14pt;
+}
+
+#windowsclosed {
+  font-size: 14pt;
+}
+#windowsclosed * {
+  font-size: 14pt;
+}
+
+h2 {
+  top: 0;
 }
 
 .ijiflabel {
   font-size: 12pt;
+  text-align: center;
 }
 
+.ijiflabel * {
+  font-size: 32pt;
+  line-height: 0px;
+}
 .doortable {
   width: 100%;
   font-size: 12pt;
