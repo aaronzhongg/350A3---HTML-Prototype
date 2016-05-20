@@ -27,7 +27,7 @@
   <div class="content">
     <h1>Doors</h1>
     <hr>
-    <p> <i> View and change the states of your doors here. Opened doors are automatically unlocked </i></p>
+    <p> <i> View and change the states of your doors here. Locked doors are automatically closed. Unlock doors before opening </i></p>
     <br>
     <table class="doortable">
       <thead>
@@ -41,30 +41,31 @@
       <tr>
         <td><img src="img/frontdoor.jpg" height="120px;"></td>
         <td>Front Door</td>
-        <td><input type="checkbox" data-toggle="toggle" data-on="Closed" data-off="Opened"></td>
-        <td><input type="checkbox" data-toggle="toggle" data-on="Locked" data-off="Unlocked"></td>
+        <td><input id="door1" type="checkbox" data-toggle="toggle" data-on="Opened" data-off="Closed"></td>
+        <td><input id="door1lock" type="checkbox" data-toggle="toggle" data-on="Unlocked" data-off="Locked"></td>
       </tr>
       <tr>
         <td><img src="img/garage.jpg" height="120px;"></td>
         <td>Garage</td>
-        <td><input type="checkbox" data-toggle="toggle" data-on="Closed" data-off="Opened"></td>
-        <td><input type="checkbox" data-toggle="toggle" data-on="Locked" data-off="Unlocked"></td>
+        <td><input id="door2" type="checkbox" data-toggle="toggle" data-on="Opened" data-off="Closed"></td>
+        <td><input id="door2lock" type="checkbox" data-toggle="toggle" data-on="Unlocked" data-off="Locked"></td>
       </tr>
       <tr>
         <td><img src="img/master.jpg" height="120px;"></td>
         <td>Master Bedroom</td>
-        <td><input type="checkbox" data-toggle="toggle" data-on="Closed" data-off="Opened"></td>
-        <td><input type="checkbox" data-toggle="toggle" data-on="Locked" data-off="Unlocked"></td>
+        <td><input id="door3" type="checkbox" data-toggle="toggle" data-on="Opened" data-off="Closed"></td>
+        <td><input id="door3lock" type="checkbox" data-toggle="toggle" data-on="Unlocked" data-off="Locked"></td>
       </tr>
       <tr>
         <td><img src="img/back.jpg" height="120px;"></td>
         <td>Back Door</td>
-        <td><input type="checkbox" data-toggle="toggle" data-on="Closed" data-off="Opened"></td>
-        <td><input type="checkbox" data-toggle="toggle" data-on="Locked" data-off="Unlocked"></td>
+        <td><input id="door4" type="checkbox" data-toggle="toggle" data-on="Opened" data-off="Closed"></td>
+        <td><input id="door4lock" type="checkbox" data-toggle="toggle" data-on="Unlocked" data-off="Locked"></td>
       </tr>
     </table>
   </div>
 
+  <script src="js\script.js"></script>
 
 </body>
 </html>
