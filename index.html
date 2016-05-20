@@ -36,8 +36,8 @@
       </div>
       <div class="dashboardpanel" style="float:right">
         <h2>  <img id="dashboardimg" src="img/window.png" /> Windows </h2>
-        <p class="ijiflabel"> Windows opened: <b>3</b></p>
-        <p class="ijiflabel" > Windows closed: <b>8 <i>(8 locked)</i></b></p>
+        <p class="ijiflabel"> Windows opened: <b id="windowsopened">3</b></p>
+        <p class="ijiflabel" > Windows closed: <b id="windowsclosed">8 <i>(8 locked)</i></b></p>
       </div>
     </div>
     <br>
@@ -67,18 +67,27 @@
   <script>
     var doorOpen = 0;
     var doorLock = 0;
+    var windowOpen = 0;
+    var windowLock = 0;
     for (var i=1; i<5; i++) {
       if (sessionStorage.getItem("door" + i) == "open") {
         doorOpen++;
       }
-
       if (sessionStorage.getItem("door" + i + "lock") == "lock") {
         doorLock++;
       }
+      if (sessionStorage.getItem("window" + i) == "open") {
+        windowOpen++;
+      }
+      if (sessionStorage.getItem("window" + i + "lock") == "lock") {
+        windowLock++;
+      }
     }
-
     document.getElementById("doorsopened").innerHTML = doorOpen;
     document.getElementById("doorsclosed").innerHTML = 4 - doorOpen + "<i> (" + doorLock + " Locked)</i>";
+
+    document.getElementById("windowsopened").innerHTML = windowOpen;
+    document.getElementById("windowsclosed").innerHTML = 4 - windowOpen + "<i> (" + windowLock + " Locked)</i>";
   </script>
 
 </body>

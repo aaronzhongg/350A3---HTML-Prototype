@@ -1,4 +1,4 @@
-//DOOR FUNCTIONS
+//DOOR SCRIPT
 
 if (typeof(Storage) !== "undefined" && sessionStorage.getItem("door1") == null) {
   sessionStorage.setItem("door1", "close");
@@ -9,6 +9,15 @@ if (typeof(Storage) !== "undefined" && sessionStorage.getItem("door1") == null) 
   sessionStorage.setItem("door3lock", "lock");
   sessionStorage.setItem("door4", "close");
   sessionStorage.setItem("door4lock", "lock");
+
+  sessionStorage.setItem("window1", "close");
+  sessionStorage.setItem("window1lock", "lock");
+  sessionStorage.setItem("window2", "close");
+  sessionStorage.setItem("window2lock", "lock");
+  sessionStorage.setItem("window3", "close");
+  sessionStorage.setItem("window3lock", "lock");
+  sessionStorage.setItem("window4", "close");
+  sessionStorage.setItem("window4lock", "lock");
 }
 
 if (sessionStorage.getItem("door1lock") == "unlock") {
@@ -145,6 +154,145 @@ $(function() {
     }
     else {
       sessionStorage.setItem("door4", "open");
+    }
+  })
+})
+
+//WINDOWS SCRIPT
+if (sessionStorage.getItem("window1lock") == "unlock") {
+  $('#window1lock').bootstrapToggle("on");
+  $('#window1').bootstrapToggle('enable');
+} else {
+  $('#window1').bootstrapToggle('disable');
+}
+if (sessionStorage.getItem("window1") == "open") {
+  $('#window1').bootstrapToggle("on");
+
+}
+
+if (sessionStorage.getItem("window2") == "open") {
+  $('#window2').bootstrapToggle("on");
+  $('#window2lock').bootstrapToggle("on");
+}
+if (sessionStorage.getItem("window2lock") == "unlock") {
+  $('#window2lock').bootstrapToggle("on");
+} else {
+  $('#window2').bootstrapToggle('disable');
+}
+if (sessionStorage.getItem("window3") == "open") {
+  $('#window3').bootstrapToggle("on");
+  $('#window3lock').bootstrapToggle("on");
+}
+
+if (sessionStorage.getItem("window3lock") == "unlock") {
+  $('#window3lock').bootstrapToggle("on");
+} else {
+  $('#window3').bootstrapToggle('disable');
+}
+if (sessionStorage.getItem("window4") == "open") {
+  $('#window4').bootstrapToggle("on");
+  $('#window4lock').bootstrapToggle("on");
+}
+
+if (sessionStorage.getItem("window4lock") == "unlock") {
+  $('#window4lock').bootstrapToggle("on");
+} else {
+  $('#window4').bootstrapToggle('disable');
+}
+
+$(function() {
+  $('#window1lock').change(function() {
+    if (sessionStorage.getItem("window1lock") == "unlock") {
+      sessionStorage.setItem("window1lock", "lock");
+      $('#window1').bootstrapToggle("off");
+      $('#window1').bootstrapToggle('disable');
+    }
+    else {
+      sessionStorage.setItem("window1lock", "unlock");
+      $('#window1').bootstrapToggle('enable');
+    }
+  })
+})
+
+$(function() {
+  $('#window1').change(function() {
+    if (sessionStorage.getItem("window1") == "open") {
+      sessionStorage.setItem("window1", "close");
+    }
+    else {
+      sessionStorage.setItem("window1", "open");
+    }
+  })
+})
+
+$(function() {
+  $('#window2lock').change(function() {
+    if (sessionStorage.getItem("window2lock") == "unlock") {
+      sessionStorage.setItem("window2lock", "lock");
+      $('#window2').bootstrapToggle("off");
+      $('#window2').bootstrapToggle('disable');
+    }
+    else {
+      sessionStorage.setItem("window2lock", "unlock");
+      $('#window2').bootstrapToggle('enable');
+    }
+  })
+})
+$(function() {
+  $('#window2').change(function() {
+    if (sessionStorage.getItem("window2") == "open") {
+      sessionStorage.setItem("window2", "close");
+    }
+    else {
+      sessionStorage.setItem("window2", "open");
+    }
+  })
+})
+
+$(function() {
+  $('#window3lock').change(function() {
+    if (sessionStorage.getItem("window3lock") == "unlock") {
+      sessionStorage.setItem("window3lock", "lock");
+      $('#window3').bootstrapToggle("off");
+      $('#window3').bootstrapToggle('disable');
+    }
+    else {
+      sessionStorage.setItem("window3lock", "unlock");
+      $('#window3').bootstrapToggle('enable');
+    }
+  })
+})
+$(function() {
+  $('#window3').change(function() {
+    if (sessionStorage.getItem("window3") == "open") {
+      sessionStorage.setItem("window3", "close");
+    }
+    else {
+      sessionStorage.setItem("window3", "open");
+    }
+  })
+})
+
+$(function() {
+  $('#window4lock').change(function() {
+    if (sessionStorage.getItem("window4lock") == "unlock") {
+      sessionStorage.setItem("window4lock", "lock");
+      $('#window4').bootstrapToggle("off");
+      $('#window4').bootstrapToggle('disable');
+    }
+    else {
+      sessionStorage.setItem("window4lock", "unlock");
+      $('#window4').bootstrapToggle('enable');
+    }
+  })
+})
+$(function() {
+  $('#window4').change(function() {
+    if (sessionStorage.getItem("window4") == "open") {
+      sessionStorage.setItem("window4", "close");
+    }
+    else {
+      sessionStorage.setItem("window4", "open");
     }
   })
 })

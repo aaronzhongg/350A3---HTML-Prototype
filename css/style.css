@@ -132,9 +132,10 @@ h1 {
 .dashboardpanel {
   /*box-shadow: 5px 5px 5px #888888;*/
   background-color: white;
-  outline: black solid thin;
-  border-bottom: thin solid black;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
   width: 50%
+
 }
 
 .dashboardpanel * {
