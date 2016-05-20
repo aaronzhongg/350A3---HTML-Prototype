@@ -64,6 +64,7 @@
     <br>
   </div>
 
+  <script src="js/script.js"></script>
   <script>
     var doorOpen = 0;
     var doorLock = 4;
@@ -74,13 +75,13 @@
       if (sessionStorage.getItem("door" + i) == "open") {
         doorOpen++;
       }
-      if (sessionStorage.getItem("door" + i + "unlock") == "lock") {
+      if (sessionStorage.getItem("door" + i + "lock") == "lock") {
         doorLock--;
       }
       if (sessionStorage.getItem("window" + i) == "open") {
         windowOpen++;
       }
-      if (sessionStorage.getItem("window" + i + "unlock") == "lock") {
+      if (sessionStorage.getItem("window" + i + "lock") == "lock") {
         windowLock--;
       }
     }

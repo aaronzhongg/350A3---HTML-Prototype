@@ -1,33 +1,33 @@
 //DOOR SCRIPT
 
 if (typeof(Storage) !== "undefined" && sessionStorage.getItem("door1") == null) {
-  sessionStorage.setItem("door1", "close");
-  sessionStorage.setItem("door1lock", "lock");
+  sessionStorage.setItem("door1", "open");
+  sessionStorage.setItem("door1lock", "unlock");
   sessionStorage.setItem("door2", "close");
   sessionStorage.setItem("door2lock", "lock");
   sessionStorage.setItem("door3", "close");
   sessionStorage.setItem("door3lock", "lock");
   sessionStorage.setItem("door4", "close");
-  sessionStorage.setItem("door4lock", "lock");
+  sessionStorage.setItem("door4lock", "unlock");
 
-  sessionStorage.setItem("window1", "close");
-  sessionStorage.setItem("window1lock", "lock");
+  sessionStorage.setItem("window1", "open");
+  sessionStorage.setItem("window1lock", "unlock");
   sessionStorage.setItem("window2", "close");
   sessionStorage.setItem("window2lock", "lock");
-  sessionStorage.setItem("window3", "close");
-  sessionStorage.setItem("window3lock", "lock");
+  sessionStorage.setItem("window3", "open");
+  sessionStorage.setItem("window3lock", "unlock");
   sessionStorage.setItem("window4", "close");
-  sessionStorage.setItem("window4lock", "lock");
+  sessionStorage.setItem("window4lock", "unlock");
 
-  sessionStorage.setItem("light1", "off");
-  sessionStorage.setItem("light2", "off");
-  sessionStorage.setItem("light3", "off");
-  sessionStorage.setItem("light4", "off");
-  sessionStorage.setItem("light5", "off");
-  sessionStorage.setItem("light6", "off");
-  sessionStorage.setItem("light7", "off");
-  sessionStorage.setItem("light8", "off");
-  sessionStorage.setItem("light9", "off");
+  sessionStorage.setItem("light1", "close");
+  sessionStorage.setItem("light2", "close");
+  sessionStorage.setItem("light3", "close");
+  sessionStorage.setItem("light4", "close");
+  sessionStorage.setItem("light5", "open");
+  sessionStorage.setItem("light6", "close");
+  sessionStorage.setItem("light7", "open");
+  sessionStorage.setItem("light8", "open");
+  sessionStorage.setItem("light9", "close");
 }
 
 if (sessionStorage.getItem("door1lock") == "unlock") {
