@@ -45,7 +45,7 @@
     <div id="container">
       <div class="dashboardpanel" style="float:left">
         <h2>  <img id="dashboardimg" src="img/light.png" /> Lights </h2>
-        <p class="ijiflabel"> Lights on: <b>0</b></p>
+        <p class="ijiflabel"> Lights on: <b id="lightson">0</b></p>
       </div>
       <div class="dashboardpanel" style="float:right">
         <h2>  <img id="dashboardimg" src="img/temp.png" style="width:75px;"/> Temperature </h2>
@@ -66,23 +66,33 @@
 
   <script>
     var doorOpen = 0;
-    var doorLock = 0;
+    var doorLock = 4;
     var windowOpen = 0;
-    var windowLock = 0;
+    var windowLock = 4;
+    var lightOn = 0;
     for (var i=1; i<5; i++) {
       if (sessionStorage.getItem("door" + i) == "open") {
         doorOpen++;
       }
-      if (sessionStorage.getItem("door" + i + "lock") == "lock") {
-        doorLock++;
+      if (sessionStorage.getItem("door" + i + "unlock") == "lock") {
+        doorLock--;
       }
       if (sessionStorage.getItem("window" + i) == "open") {
         windowOpen++;
       }
-      if (sessionStorage.getItem("window" + i + "lock") == "lock") {
-        windowLock++;
+      if (sessionStorage.getItem("window" + i + "unlock") == "lock") {
+        windowLock--;
       }
     }
+
+    for (var i=1; i<10; i++) {
+      if (sessionStorage.getItem("light" + i) == "open") {
+        lightOn++;
+      }
+    }
+
+    document.getElementById("lightson").innerHTML = lightOn;
+
     document.getElementById("doorsopened").innerHTML = doorOpen;
     document.getElementById("doorsclosed").innerHTML = 4 - doorOpen + "<i> (" + doorLock + " Locked)</i>";
 

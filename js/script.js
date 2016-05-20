@@ -18,6 +18,16 @@ if (typeof(Storage) !== "undefined" && sessionStorage.getItem("door1") == null) 
   sessionStorage.setItem("window3lock", "lock");
   sessionStorage.setItem("window4", "close");
   sessionStorage.setItem("window4lock", "lock");
+
+  sessionStorage.setItem("light1", "off");
+  sessionStorage.setItem("light2", "off");
+  sessionStorage.setItem("light3", "off");
+  sessionStorage.setItem("light4", "off");
+  sessionStorage.setItem("light5", "off");
+  sessionStorage.setItem("light6", "off");
+  sessionStorage.setItem("light7", "off");
+  sessionStorage.setItem("light8", "off");
+  sessionStorage.setItem("light9", "off");
 }
 
 if (sessionStorage.getItem("door1lock") == "unlock") {
@@ -293,6 +303,127 @@ $(function() {
     }
     else {
       sessionStorage.setItem("window4", "open");
+    }
+  })
+})
+
+//LIGHTS scripts
+
+if (sessionStorage.getItem("light1") == "open") {
+  $('#light1').bootstrapToggle("on");
+}
+if (sessionStorage.getItem("light2") == "open") {
+  $('#light2').bootstrapToggle("on");
+}
+if (sessionStorage.getItem("light3") == "open") {
+  $('#light3').bootstrapToggle("on");
+}
+if (sessionStorage.getItem("light4") == "open") {
+  $('#light4').bootstrapToggle("on");
+}
+if (sessionStorage.getItem("light5") == "open") {
+  $('#light5').bootstrapToggle("on");
+}
+if (sessionStorage.getItem("light6") == "open") {
+  $('#light6').bootstrapToggle("on");
+}
+if (sessionStorage.getItem("light7") == "open") {
+  $('#light7').bootstrapToggle("on");
+}
+if (sessionStorage.getItem("light8") == "open") {
+  $('#light8').bootstrapToggle("on");
+}
+if (sessionStorage.getItem("light9") == "open") {
+  $('#light9').bootstrapToggle("on");
+}
+
+$(function() {
+  $('#light1').change(function() {
+    if (sessionStorage.getItem("light1") == "open") {
+      sessionStorage.setItem("light1", "close");
+    }
+    else {
+      sessionStorage.setItem("window4", "open");
+    }
+  })
+})
+$(function() {
+  $('#light2').change(function() {
+    if (sessionStorage.getItem("light2") == "open") {
+      sessionStorage.setItem("light2", "close");
+    }
+    else {
+      sessionStorage.setItem("light2", "open");
+    }
+  })
+})
+$(function() {
+  $('#light3').change(function() {
+    if (sessionStorage.getItem("light3") == "open") {
+      sessionStorage.setItem("light3", "close");
+    }
+    else {
+      sessionStorage.setItem("light3", "open");
+    }
+  })
+})
+$(function() {
+  $('#light4').change(function() {
+    if (sessionStorage.getItem("light4") == "open") {
+      sessionStorage.setItem("light4", "close");
+    }
+    else {
+      sessionStorage.setItem("light4", "open");
+    }
+  })
+})
+$(function() {
+  $('#light5').change(function() {
+    if (sessionStorage.getItem("light5") == "open") {
+      sessionStorage.setItem("light5", "close");
+    }
+    else {
+      sessionStorage.setItem("light5", "open");
+    }
+  })
+})
+$(function() {
+  $('#light6').change(function() {
+    if (sessionStorage.getItem("light6") == "open") {
+      sessionStorage.setItem("light6", "close");
+    }
+    else {
+      sessionStorage.setItem("light6", "open");
+    }
+  })
+})
+$(function() {
+  $('#light7').change(function() {
+    if (sessionStorage.getItem("light7") == "open") {
+      sessionStorage.setItem("light7", "close");
+    }
+    else {
+      sessionStorage.setItem("light7", "open");
+    }
+  })
+})
+$(function() {
+  $('#light8').change(function() {
+    if (sessionStorage.getItem("light8") == "open") {
+      sessionStorage.setItem("light8", "close");
+    }
+    else {
+      sessionStorage.setItem("light8", "open");
+    }
+  })
+})
+$(function() {
+  $('#light9').change(function() {
+    if (sessionStorage.getItem("light9") == "open") {
+      sessionStorage.setItem("light9", "close");
+    }
+    else {
+      sessionStorage.setItem("light9", "open");
     }
   })
 })
