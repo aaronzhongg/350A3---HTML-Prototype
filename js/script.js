@@ -91,7 +91,9 @@ $(function() {
       sessionStorage.setItem("door1", "close");
     }
     else {
-      sessionStorage.setItem("door1", "open");
+      if (sessionStorage.getItem("door1lock") == "unlock") {
+        sessionStorage.setItem("door1", "open");
+    }
     }
   })
 })
@@ -114,9 +116,9 @@ $(function() {
     if (sessionStorage.getItem("door2") == "open") {
       sessionStorage.setItem("door2", "close");
     }
-    else {
+    if (sessionStorage.getItem("door2lock") == "unlock") {
       sessionStorage.setItem("door2", "open");
-    }
+  }
   })
 })
 
@@ -138,9 +140,9 @@ $(function() {
     if (sessionStorage.getItem("door3") == "open") {
       sessionStorage.setItem("door3", "close");
     }
-    else {
+    if (sessionStorage.getItem("door3lock") == "unlock") {
       sessionStorage.setItem("door3", "open");
-    }
+  }
   })
 })
 
@@ -163,7 +165,9 @@ $(function() {
       sessionStorage.setItem("door4", "close");
     }
     else {
-      sessionStorage.setItem("door4", "open");
+      if (sessionStorage.getItem("door4lock") == "unlock") {
+        sessionStorage.setItem("door4", "open");
+    }
     }
   })
 })
@@ -230,7 +234,9 @@ $(function() {
       sessionStorage.setItem("window1", "close");
     }
     else {
-      sessionStorage.setItem("window1", "open");
+      if (sessionStorage.getItem("window1lock") == "unlock") {
+        sessionStorage.setItem("window1", "open");
+    }
     }
   })
 })
@@ -254,7 +260,9 @@ $(function() {
       sessionStorage.setItem("window2", "close");
     }
     else {
-      sessionStorage.setItem("window2", "open");
+      if (sessionStorage.getItem("window2lock") == "unlock") {
+        sessionStorage.setItem("window2", "open");
+    }
     }
   })
 })
@@ -278,7 +286,9 @@ $(function() {
       sessionStorage.setItem("window3", "close");
     }
     else {
-      sessionStorage.setItem("window3", "open");
+      if (sessionStorage.getItem("window3lock") == "unlock") {
+        sessionStorage.setItem("window3", "open");
+    }
     }
   })
 })
@@ -302,7 +312,9 @@ $(function() {
       sessionStorage.setItem("window4", "close");
     }
     else {
-      sessionStorage.setItem("window4", "open");
+      if (sessionStorage.getItem("window4lock") == "unlock") {
+        sessionStorage.setItem("window4", "open");
+    }
     }
   })
 })
